@@ -1,6 +1,5 @@
 const block = document.querySelector('.content');
 const popUp = document.querySelector('.popUp');
-let newObj = {};
 
 const customSelect = `<div class="item__select">
                         <div class="item__summary">Мгновенно</div>
@@ -22,8 +21,6 @@ const getData = async () => {
 
 const createDOM = async () => {
     let result = await getData();
-    newObj = JSON.parse(JSON.stringify(result));
-    console.log(newObj);
     let template = '';
 
     const createArticle = (title, checked, select, tip, note) => {
