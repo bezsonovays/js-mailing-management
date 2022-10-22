@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Управление рассылками</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+<div class="wrapper">
+    <main class="main">
+        <div class="container">
+            <header class="header">
+                <h1 class="header__title">Управление рассылками</h1>
+                <p class="header__text">Здравствуйте, Андрей. Выберите, категории писем, от которых хотите отписаться. Но пожалуйста, исключите только те категории, которые действительно вас не интересуют. Мы обещаем слать только полезные письма где 😊</p>
+            </header>
+            <section class="section">
+                <h2 class="section__title">Общие уведомления</h2>
+                <div class="section__block">
+                    <article class="section__item item" data-item="Приветственная серия">
+                        <div class="item__header">
+                            <h4 class="item__title">Приветственная серия</h4>
+                        </div>
+                        <label class="item__switch">
+                            <input type="checkbox" class="switch__input" checked>
+                            <span class="switch__slider"></span>
+                        </label>
+                        <div class="item__add">
+                            <p class="item__note">4 полезных и емких письма в течение месяца</p>
+                        </div>
+                    </article>
+                    <article class="section__item item" data-item="Образовательные вебинары">
+                        <div class="item__header">
+                            <h4 class="item__title">Образовательные вебинары</h4>
+                        </div>
+                        <label class="item__switch">
+                            <input type="checkbox" class="switch__input">
+                            <span class="switch__slider"></span>
+                        </label>
+                        <div class="item__add">
+                            <p class="item__note">Бесплатные вебинары проходят 1 раз в 2 недели.
+                            Вы будете получать 2 письма с напоминанием
+                            о предстоящем вебинаре</p>
+                        </div>
+                    </article>
+                    <article class="section__item item flex-align" data-item="Личные сообщения">
+                        <div class="item__header">
+                            <div class="item__flex">
+                                <h4 class="item__title">Личные сообщения</h4>
+                                <div class="item__info">
+                                    <div class="info__icon">
+                                        <p class="info__text">Письма об обновлениях и улучшениях платформы</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <label class="item__switch">
+                            <input type="checkbox" class="switch__input" checked>
+                            <span class="switch__slider"></span>
+                        </label>
+                        <div class="item__add">
+                            <div class="item__select">
+                                <div class="item__summary">Мгновенно</div>
+                                <div class="item__block">
+                                    <div class="item__options">
+                                        <div class="item__option selected" data-block="Мгновенно">Мгновенно</div>
+                                        <div class="item__option" data-block="1 раз в день">1 раз в день</div>
+                                        <div class="item__option" data-block="Отключить">Отключить</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="section">
+                <h2 class="section__title">Уведомление по Сайтам</h2>
+                <div class="section__block">
+                    <article class="section__item item" data-item="Новости Cайт">
+                        <div class="item__header">
+                            <h4 class="item__title">Новости</h4>
+                        </div>
+                        <label class="item__switch">
+                            <input type="checkbox" class="switch__input">
+                            <span class="switch__slider"></span>
+                        </label>
+                        <div class="item__add">
+                        </div>
+                    </article>
+                </div>
+                <h3 class="section__subtitle">Поисковые агенты</h3>
+                <div class="section__block">
+                    <article class="section__item "  data-item="Бизнес">
+                        <h4 class="item__title">Бизнес</h4>
+                        <div class="item flex-align">
+                            <div class="item__service service">
+                                <div class="service__list">
+                                    <div class="service__block">
+                                        <p class="service__title">Seo</p>
+                                        <div class="service__delete">✕</div>
+                                    </div>
+                                    <div class="service__block">
+                                        <p class="service__title">Продвижение</p>
+                                        <div class="service__delete">✕</div>
+                                    </div>
+                                    <div class="service__block">
+                                        <p class="service__title">Аналитика</p>
+                                        <div class="service__delete">✕</div>
+                                    </div>
+                                </div>
+                                <div class="service__details">Детали</div>
+                            </div>
+                            <label class="item__switch">
+                                <input type="checkbox" class="switch__input" checked>
+                                <span class="switch__slider"></span>
+                            </label>
+                            <div class="item__add">
+                                <p class="item__note">Поисковый агент присылает 1 письмо
+                                    в неделю и только при условии, что найдены
+                                    новые площадки</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="section__item" data-item="123">
+                        <h4 class="item__title">123</h4>
+                        <div class="item flex-align">
+                            <div class="item__service service">
+                                <div class="service__list">
+                                    <div class="service__block">
+                                        <p class="service__title">Seo</p>
+                                        <div class="service__delete">✕</div>
+                                    </div>
+                                    <div class="service__block">
+                                        <p class="service__title">Продвижение</p>
+                                        <div class="service__delete">✕</div>
+                                    </div>
+                                </div>
+                                <div class="service__details">Детали</div>
+                            </div>
+                            <label class="item__switch">
+                                <input type="checkbox" class="switch__input">
+                                <span class="switch__slider"></span>
+                            </label>
+                        </div>
+                    </article>
+                    <article class="section__item" data-item="SEO">
+                        <h4 class="item__title">SEO</h4>
+                        <div class="item flex-align">
+                            <div class="item__service service">
+                                <div class="service__list">
+                                    <div class="service__block">
+                                        <p class="service__title">Seo</p>
+                                        <div class="service__delete">✕</div>
+                                    </div>
+                                    <div class="service__block">
+                                        <p class="service__title">Продвижение</p>
+                                        <div class="service__delete">✕</div>
+                                    </div>
+                                    <div class="service__block">
+                                        <p class="service__title">Аналитика</p>
+                                        <div class="service__delete">✕</div>
+                                    </div>
+                                </div>
+                                <div class="service__details">Детали</div>
+                            </div>
+                            <label class="item__switch">
+                                <input type="checkbox" class="switch__input">
+                                <span class="switch__slider"></span>
+                            </label>
+                        </div>
+                    </article>
+                    <article class="section__item" data-item="Бурж ссылки">
+                        <h4 class="item__title">Бурж ссылки</h4>
+                        <div class="item flex-align">
+                            <div class="item__service service">
+                                <div class="service__list">
+                                    <div class="service__block">
+                                        <p class="service__title">Бурж ссылки: Не обнаружен</p>
+                                        <div class="service__delete">✕</div>
+                                    </div>
+                                </div>
+                                <div class="service__details">Детали</div>
+                            </div>
+                            <label class="item__switch">
+                                <input type="checkbox" class="switch__input" checked>
+                                <span class="switch__slider"></span>
+                            </label>
+                        </div>
+                    </article>
+                    <h3 class="section__subtitle">Рекламные компании</h3>
+                    <div class="section__block">
+                        <article class="section__item item flex-align" data-item="Строительство домов в Украине">
+                            <div class="item__header">
+                                <h4 class="item__title">Строительство домов в Украине </h4>
+                            </div>
+                            <label class="item__switch">
+                                <input type="checkbox" class="switch__input" checked>
+                                <span class="switch__slider"></span>
+                            </label>
+                            <div class="item__add">
+                                <div class="item__select">
+                                    <div class="item__summary">Мгновенно</div>
+                                    <div class="item__block">
+                                        <div class="item__options">
+                                            <div class="item__option selected" data-block="Мгновенно">Мгновенно</div>
+                                            <div class="item__option" data-block="1 раз в день">1 раз в день</div>
+                                            <div class="item__option" data-block="Отключить">Отключить</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+               </div>
+            </section>
+            <section class="section">
+                <h2 class="section__title">Уведомления по Телеграму</h2>
+                <div class="section__block">
+                    <article class="section__item item" data-item="Новости Telegram">
+                        <div class="item__header">
+                            <h4 class="item__title">Новости</h4>
+                        </div>
+                        <label class="item__switch">
+                            <input type="checkbox" class="switch__input">
+                            <span class="switch__slider"></span>
+                        </label>
+                    </article>
+                </div>
+            </section>
+            <section class="section">
+                <div class="section__buttons">
+                    <div class="section__button">По умолчанию</div>
+                    <div class="section__button section__button-blue">Сохранить изменения</div>
+                </div>
+            </section>
+        </div>
+        <div class="popUp"></div>
+    </main>
+</div>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
