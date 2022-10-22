@@ -211,7 +211,7 @@ createPage();
                             <div class="popUp__content">
                                 <p class="popUp__title">Ваши данные успешно сохранены!</p>
                                 <div class="popUp__icon">
-                                        <img src="../images/ok.svg">
+                                        <img src="./images/ok.svg">
                                 </div>
                                </div>
                         </div>
