@@ -80,13 +80,13 @@ h6 {
 }
 
 .section__title {
-    font-size: 1em;
+    font-size: 16px;
     font-weight: 600;
     margin-bottom: 32px;
 }
 
 .section__subtitle {
-    font-size: 0.875em;
+    font-size: 14px;
     font-weight: 600;
     margin: 45px 0 22px 0;
 }
@@ -106,13 +106,13 @@ section {
 }
 
 .header__title {
-    font-size: 3.75em;
+    font-size: 60px;
     color: #222222;
     margin-bottom: 15px;
 }
 
 .header__text {
-    font-size: 1.375em;
+    font-size: 22px;
 }
 
 /****TOGGLE SWITCH*******/
@@ -184,7 +184,7 @@ section {
 }
 
 .item__note {
-    font-size: 0.875em;
+    font-size: 14px;
 }
 
 .info__icon {
@@ -242,7 +242,10 @@ section {
     transform: translateY(-50%);
 }
 
-.info__icon:hover .info__text {
+.info__icon:hover .info__text,
+.info__icon:active .info__text,
+.info__icon:focus .info__text
+ {
     display: block;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
@@ -258,7 +261,7 @@ section {
     padding: 10px 16px;
     background-color: #fff;
     color: #858585;
-    font-size: 0.875em;
+    font-size: 14px;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
     position: relative;
@@ -316,7 +319,7 @@ section {
 .item__option {
     color: #858585;
     background-color: #fff;
-    font-size: 0.875em;
+    font-size: 14px;
     padding: 10px 16px;
     cursor: pointer;
 }
@@ -481,7 +484,7 @@ section {
 
 .popUp__title {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 24px;
     margin-bottom: 40px;
 }
 
@@ -509,11 +512,11 @@ section {
     }
 
     .header__title {
-        font-size: 3em;
+        font-size: 42px;
     }
 
     .header__text {
-        font-size: 1.2em;
+        font-size: 20px;
     }
 
     .container {
@@ -527,11 +530,11 @@ section {
     }
 
     .header__title {
-        font-size: 2.75em;
+        font-size: 36px;
     }
 
     .header__text {
-        font-size: 1em;
+        font-size: 16px;
     }
 
     .item {
