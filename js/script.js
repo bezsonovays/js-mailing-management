@@ -1,5 +1,6 @@
 const block = document.querySelector('.content');
 const popUp = document.querySelector('.popUp');
+const bodyWidth = document.body.offsetWidth;
 
 const customSelect = `<div class="item__select">
                         <div class="item__summary">Мгновенно</div>
@@ -69,7 +70,7 @@ const createDOM = async () => {
                                  template += `<article class="section__item "  data-item="${el.title}">
                                         <h4 class="item__title">${el.title}</h4>
                                         <div class="item flex-align">
-                                            <div class="item__service service">
+                                            <div class="item__service service flex-align">
                                                 <div class="service__list">`
                                     if(el.blocks.length) {
                                         el.blocks.forEach(block => {
@@ -118,7 +119,7 @@ const createPage = async () => {
     const selected = document.querySelectorAll('.item__summary');
     const options = document.querySelectorAll('.item__option');
     const deleteButtons = document.querySelectorAll('.service__delete');
-    const items = document.querySelectorAll('[data-item]');
+    const tip = document.querySelector('.info__icon');
     
     selected.forEach(el => el.addEventListener('click', ({target}) => target.parentElement.classList.toggle('active')));
 
@@ -155,6 +156,12 @@ const createPage = async () => {
             }
         }
     ));
+
+    if (bodyWidth < 769) {
+        tip.addEventListener('touchstart', (e) => {
+            console.log(e)
+        })
+    }
 }
 
 createPage();
@@ -244,3 +251,5 @@ popUp.addEventListener('click', ({target}) => {
         closeWindow();
     }
 })
+
+
