@@ -119,7 +119,6 @@ const createPage = async () => {
     const selected = document.querySelectorAll('.item__summary');
     const options = document.querySelectorAll('.item__option');
     const deleteButtons = document.querySelectorAll('.service__delete');
-    const tip = document.querySelector('.info__icon');
     
     selected.forEach(el => el.addEventListener('click', ({target}) => target.parentElement.classList.toggle('active')));
 
@@ -156,12 +155,6 @@ const createPage = async () => {
             }
         }
     ));
-
-    if (bodyWidth < 769) {
-        tip.addEventListener('touchstart', (e) => {
-            console.log(e)
-        })
-    }
 }
 
 createPage();
