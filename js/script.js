@@ -79,11 +79,7 @@ const createDOM = async () => {
                                                             <div class="service__delete">✕</div>
                                                         </div>`
                                         })
-                                     } else {template += `<div class="service__block" data-add>
-                                                    <p class="service__title">${el.title}: Не обнаружен</p>
-                                                    <div class="service__delete">✕</div>
-                                                </div>`
-                                    }  
+                                     }  
                                     template += `</div>
                                                 <div class="service__details" onclick="openDetailsModal()">Детали</div>
                                                 </div>
@@ -141,17 +137,10 @@ const createPage = async () => {
             const parent = target.closest('.section__item');
             const title = parent.querySelector('.item__title');
             const serviceList = parent.querySelector('.service__list');
-            let count = 0;
             
             target.parentElement.style.display = 'none';
             for (let i = 0; i < serviceList.children.length; i++) {
                 serviceList.children[i].style.display === 'none' && count++; 
-            }
-            if (count === serviceList.children.length) {
-                serviceList.innerHTML += `<div class="service__block" data-add>
-                                                <p class="service__title">${title.innerText}: Не обнаружен</p>
-                                                <div class="service__delete">✕</div>
-                                            </div>`
             }
         }
     ));
