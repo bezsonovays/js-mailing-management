@@ -1,6 +1,5 @@
 const block = document.querySelector('.content');
 const popUp = document.querySelector('.popUp');
-const bodyWidth = document.body.offsetWidth;
 
 const customSelect = `<div class="item__select">
                         <div class="item__summary">Мгновенно</div>
@@ -133,17 +132,7 @@ const createPage = async () => {
             }
         );
 
-    deleteButtons.forEach(el => el.addEventListener('click', ({target}) => {
-            const parent = target.closest('.section__item');
-            const title = parent.querySelector('.item__title');
-            const serviceList = parent.querySelector('.service__list');
-            
-            target.parentElement.style.display = 'none';
-            for (let i = 0; i < serviceList.children.length; i++) {
-                serviceList.children[i].style.display === 'none' && count++; 
-            }
-        }
-    ));
+    deleteButtons.forEach(el => el.addEventListener('click', ({target}) => target.parentElement.style.display = 'none'  ));
 }
 
 createPage();
